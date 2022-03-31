@@ -1,12 +1,16 @@
 # React Memo & Callback
 
-##### React.Memo() vs useMemo() vs useCallback()
+### React.Memo() vs useMemo() vs useCallback()
 
 By default, when the data is changed, the entire component is rerendered. If that component has a child component, the child component also gets rerendered, causing unnecessary resource consumption.
 
 With Memo & Callback, the data gets memoised, allowing the data to be cached and only rendered when the data really gets updated.
 
 Memoising always come with a cost. Only use when neccessary.
+
+<br/> 
+<br/>
+<br/> 
 
 ### React.Memo()
 **Purpose:** <br/>
@@ -15,6 +19,9 @@ Memoising always come with a cost. Only use when neccessary.
   - To only rerender the child component when the prop actually changes, and not rerender the exact same value all over gain when no changes really occur
 **Beware:** <br/>
   - No referrential equality is checked (Only works if the value is a string or a number)
+
+<br/> 
+<br/> 
 
 ### useMemo()
 
@@ -29,6 +36,8 @@ Memoising always come with a cost. Only use when neccessary.
   1. `useMemo()`Doesn't work with functions. Use `useCallback()` instead.
   2. Don't use `useMemo()` to call other hooks.
 
+<br/> 
+<br/> 
 
 ### useCallback()
 
