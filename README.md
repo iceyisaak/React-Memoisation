@@ -50,7 +50,21 @@ Memoising always come with a cost. Only use when neccessary.
 **Beware**: 
   - `useCallback()` consume a lot of resources. Only use when necessary.
 
+<br/>
 ---
+<br/>
+## References
+Article on useMemo() vs. useCallback() vs. React.Memo() <br/>
+[by WebDevSimplified](https://blog.webdevsimplified.com/2020-05/memoization-in-react/)
+<br/>
+<br/>
+<br/>
+
+---
+<br/>
+<br/>
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
